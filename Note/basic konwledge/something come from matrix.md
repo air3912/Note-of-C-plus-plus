@@ -1,0 +1,5 @@
+- 面向对象三大特点：继承，封装，多态
+- 引用不是一个独立的对象，不能有引用的引用
+- endl的作用：换行加刷新输出流（刷新输出流就是
+- string::length返回类型不是int，是size_t
+- *p.Print(); 不行的核心原因是：Operator Precedence
