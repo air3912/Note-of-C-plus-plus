@@ -23,10 +23,10 @@ void kissGirlfriend(Girlfriend* gf) {cout << "pointer"<<endl;};
 void kissGirlfriend(int gfID){cout << "int"<<endl;};
 
 int main() {   
-    kissGirlfriend(nullptr);  // Ö¸ÕëÀàÐÍ×ÖÃæÁ¿£¨viod *£©0 
-    kissGirlfriend(0); // ³¢ÊÔ NULL È¡´ú 0 
+    kissGirlfriend(nullptr);  // æŒ‡é’ˆç±»åž‹å­—é¢é‡ï¼ˆviod *ï¼‰0 
+    kissGirlfriend(0); // å°è¯• NULL å–ä»£ 0 
     
     Integer i1(1), i2;
-    i2 = i1 + 0;  // ³¢ÊÔ 1,nullptr,NULL,&i1 È¡´ú 0 
+    i2 = i1 + 0;  // å°è¯• 1,nullptr,NULL,&i1 å–ä»£ 0 
     cout << i2 << endl;
 }
