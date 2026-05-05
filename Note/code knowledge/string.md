@@ -56,6 +56,7 @@ void fun3(string s){
 void fun4(string s){
     s.compare(str);//大于0的话表示s比较大
 
+    char* str[1000];
     size_t s_len=s.copy(char_str,len,pos)//return len.有点神奇，pos头一次见在前面的
     char_str[s_len]=0;//总之可以把string的一部分赋值给char数组
 

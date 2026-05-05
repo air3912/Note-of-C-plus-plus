@@ -28,7 +28,7 @@
 - vec.erase(first,last)：清除这两中间的元素
 - vec.swap(other_vec)：高效的交换内容
 
-### 迭代
+### 迭代器
 
 - vec.begin()
 - vec.end()
