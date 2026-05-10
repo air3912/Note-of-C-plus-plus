@@ -46,9 +46,35 @@ reverse(&str[0],&str[str.size()]);
 
 ### max/min/count/max_element/min_element
 
+
 其中max和min直接作用于元素，而max_element和min_element作用于迭代器。
 ```cpp
 string str("12346677745");
 int a=count(str.begin(),str.end(),'1');
+
+```
+
+
+
+### find_if之类的
+```cpp
+find_if(vec.begin(),vec.begin()+i,[](const auto& a){return a>=0;})this kind
+count_if(vec.begin(),vec.end(),[](){});//this will return the count of the num which satisfies the requirments
+find(vec.begin(),vec.end(),num);//will return the element which is equal to the num/return vec.end() if can't find the element satisfies the requirments
+
+```
+
+### lower_bound()
+
+```cpp
+std::vector<int> nums = {1, 2, 2, 2, 5, 6};
+
+// 找第一个 >= 2 的位置
+auto it1 = std::lower_bound(nums.begin(), nums.end(), 2);
+std::cout << "First >= 2: index " << std::distance(nums.begin(), it1) << "\n"; // 输出 index 1
+
+// 找第一个 > 2 的位置
+auto it2 = std::upper_bound(nums.begin(), nums.end(), 2);
+std
 
 ```

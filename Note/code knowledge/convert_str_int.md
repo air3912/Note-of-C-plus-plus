@@ -18,6 +18,7 @@ ss1>>prince;
 
 
 
+
 - sscanf/sprintf
 在<cstdio>里
 
