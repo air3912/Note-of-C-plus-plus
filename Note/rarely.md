@@ -4,14 +4,8 @@
 
 - s.copy(char *dest,size_t len,size_t pos=0);//用来把string类型复制到dest字符数组里，结尾需要手动加0，所以一般配合着返回值（length：成功复制过去多少个字符）使用。
 
-- sprintf(buf,"I have %d apples,&n);
-感觉不如直接stringstream ss;ss<<.....
-不不，sprintf的优势在于可以控制数字的格式
-
 - int count=__builtin_popcount(7)：会返回二进制表示中1的个数（这里是3）
 
-- !!!!getline()可以直接getline(cin,str);
-- 或者getline(cin,str,'#')//遇到'#'字符才停止输入
 
 ```cpp
 cin >> n;

@@ -16,13 +16,10 @@ ss1>>prince;
 ```
 
 
-
-
-
 - sscanf/sprintf
 在<cstdio>里
 
-我们用sprintf把数字写到字符串里，实现int->str
+我们用把数字写到字符串里，实现int->str
 ```cpp
 char buffer[100]//c里面的东西，不支持传入string里
 int num1,num2;
