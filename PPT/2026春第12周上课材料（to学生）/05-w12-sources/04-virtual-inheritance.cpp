@@ -1,5 +1,4 @@
 #include <iostream>
-
 using namespace std;
 
 class baseA
@@ -11,6 +10,8 @@ public:
 	}
 };
 
+
+
 class baseB
 {
 public:
@@ -19,6 +20,8 @@ public:
 		cout << endl << "This is baseB class." << endl;
 	}
 };
+
+
 
 class derivedA : public baseB, virtual public baseA
 {
@@ -29,6 +32,8 @@ public:
 	}
 };
 
+
+
 class derivedB : public baseB, virtual public baseA
 {
 public:
@@ -38,6 +43,8 @@ public:
 	}
 };
 
+
+
 class Derived : public derivedA,virtual public derivedB
 {
 public:
@@ -46,6 +53,8 @@ public:
 		cout << endl << "This is Derived class." << endl;
 	}
 };
+
+
 
 int main()
 {
