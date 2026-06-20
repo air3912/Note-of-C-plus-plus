@@ -4,7 +4,7 @@ using namespace std;
 
 class Animal {
     public:
-        virtual void eat() {//±ð call ÎÒ
+        virtual void eat() {//åˆ« call æˆ‘
             throw std::exception();  
         };
     protected:

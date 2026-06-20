@@ -19,7 +19,7 @@ public:
     }
 };
 
-class ExtTime : public Time // Time类是基类
+class ExtTime : public Time // Time绫绘槸鍩虹被
 {
 public:
     string TZ;

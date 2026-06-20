@@ -16,7 +16,7 @@ class Duck:virtual public AbstractAnimal {
 public:
     void eat() final {cout << "guagua" << endl;}; 
     ~Duck() {cout << "~Duck" << endl;};
-}; 
+};
 
 class Actor:virtual public AbstractAnimal {
 public:
@@ -25,7 +25,7 @@ public:
 };
 
 class Donald final:public Duck, public Actor {
-    //EX1: ÀàÖĞ eat ºÍ play ÊÇ·ñ¶¼±ØĞëÊµÏÖ£¿ 
+    //EX1: ç±»ä¸­ eat å’Œ play æ˜¯å¦éƒ½å¿…é¡»å®ç°ï¼Ÿ 
     void play() {cout << "Comic" << endl;} 
     ~Donald() {cout << "~Donald" << endl;}
 }; 
@@ -39,20 +39,20 @@ void dynamic_casting_err() {
 }
 
 int main() {
-    //ÏòÉÏ 
+    //å‘ä¸Š 
     AbstractAnimal& a = NEW(Donald);
     cout << typeid(AbstractAnimal).name() <<","
          << typeid(Donald).name() << endl; 
     cout << typeid(a).name() << endl;
-    //ÏòÏÂ
+    //å‘ä¸‹
     Duck& d = dynamic_cast<Duck&>(a);
     d.eat();
-    //²àÏò 
+    //ä¾§å‘ 
     Actor& c = dynamic_cast<Actor&>(d);
     c.eat();
     c.play();
-    // EX2: Animal ²ÉÓÃÕı³£Îö¹¹
-    // EX3: a ¸ÄÎª c , ÑĞ¾¿ĞéÎö¹¹ºÍÕı³£Îö¹¹µÄ²»Í¬ 
+    // EX2: Animal é‡‡ç”¨æ­£å¸¸ææ„
+    // EX3: a æ”¹ä¸º c , ç ”ç©¶è™šææ„å’Œæ­£å¸¸ææ„çš„ä¸åŒ 
     DEL(a);
     
     dynamic_casting_err();
