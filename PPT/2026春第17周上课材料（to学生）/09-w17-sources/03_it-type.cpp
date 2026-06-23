@@ -10,7 +10,7 @@ int main() {
 	const vector<int> iv {1,2,3,4,5,6,7};
 	auto it1 = iv.begin();  
 	// *it1 = 3; // error: assignment of read-only location
-	
+
 	set<int> is {1,2,1,3,1,4};
 	auto it2 = is.begin();
 	// *it2 = 5;  // error: assignment of read-only location

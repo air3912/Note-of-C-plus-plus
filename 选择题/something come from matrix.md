@@ -3,3 +3,4 @@
 - endl的作用：换行加刷新输出流（刷新输出流就是
 - string::length返回类型不是int，是size_t
 - *p.Print(); 不行的核心原因是：Operator Precedence
+- constexpr：声明编译器常量

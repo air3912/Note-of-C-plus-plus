@@ -52,6 +52,9 @@ int main(){
     auto it=l.begin();
     l.insert(it,100);//it这个位置插入100，原本的和后续的后移一位
     l.erase(it);
+    advance(it,n);
+    auto new_it=next(it,n);
+    auto new_it=prev(it,n);
 }
 
 ```

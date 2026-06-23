@@ -76,3 +76,9 @@ void fun5(string s){
     string s=to_string(pi);
 }
 ```
+
+
+
+### 其他的乱七八糟的
+
+- s.c_str();//返回c类型字符串数组
