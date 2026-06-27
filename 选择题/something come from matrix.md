@@ -2,5 +2,9 @@
 - 引用不是一个独立的对象，不能有引用的引用
 - endl的作用：换行加刷新输出流（刷新输出流就是
 - string::length返回类型不是int，是size_t
-- *p.Print(); 不行的核心原因是：Operator Precedence
+- *p.Print(); 不行的核心原因是：运算符优先级问题-〉(*p).Print()/p->Print();
 - constexpr：声明编译器常量
+- 抽象数据类型（ADT）：就是包含属性与方法的那种。
+- class默认是private，struct默认是public
+- 一个类任意个构造函数，但是一个析构函数
+- new分配失败时抛出bad_alloc而不是返回null
