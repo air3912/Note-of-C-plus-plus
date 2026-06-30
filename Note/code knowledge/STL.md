@@ -141,3 +141,31 @@ array<int,5> arr={1,2,3,4,5};
 array arr2={1,2,3,4};
 ```
 - arr.fill(0);填充元素
+
+### 还有一些乱七八糟的
+- unordered_set查找平均时间复杂度是1
+
+- deque双端队列最适合在头部和结尾进行插入删除操作。
+
+容器适配器：
+- stack；默认deque
+- queue：默认deque
+- priority_queue：默认vector
+
+顺序容器：
+- vector
+- deque
+- list
+- array
+- forward_list
+
+关联容器：
+- map
+- set
+
+迭代器；
+- 随机访问迭代器：vector/deque/array
+- 双向迭代器：list/set/map
+- 前向迭代器：forward_list
+- 输入迭代器：从容器中读取数据
+- 输出迭代器：可以向容器中写入数据
